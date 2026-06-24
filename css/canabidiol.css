@@ -1,0 +1,216 @@
+/* ============================================================
+   CLINIC — Página Medicina Canábica (Canabidiol)
+   Tema olive-green + gold, complementar à marca.
+   ============================================================ */
+
+/* ---------- Botão CBD ---------- */
+.btn--cbd{background:linear-gradient(120deg,#8a9357,#5E6738);color:#fdfdf4;box-shadow:0 12px 26px rgba(94,103,56,.32)}
+.btn--cbd:hover{transform:translateY(-3px);box-shadow:0 18px 38px rgba(94,103,56,.45)}
+
+/* ---------- Eyebrows ---------- */
+.eyebrow--olive{color:var(--olive-2)}
+.eyebrow--olive::before,.eyebrow--olive::after{background:var(--olive)}
+.eyebrow--gold{color:var(--gold-light)}
+.eyebrow--gold::before,.eyebrow--gold::after{background:var(--gold-light)}
+
+.section-title.light{color:#fff}
+.section-lead.light{color:#d7dcc2}
+
+.container.narrow{width:min(820px,92%)}
+
+/* ---------- Seções olive ---------- */
+.section--olive{
+  background:
+   radial-gradient(90% 130% at 85% 10%,#4a5329 0%,transparent 55%),
+   linear-gradient(150deg,var(--olive-deep) 0%,#2c331a 100%);
+  color:#e9ecd6;position:relative;overflow:hidden;
+}
+
+/* ============================================================
+   HERO
+   ============================================================ */
+.cbd-hero{
+  position:relative;overflow:hidden;color:#eef0df;
+  background:
+   radial-gradient(80% 90% at 88% 0%,#586232 0%,transparent 55%),
+   linear-gradient(150deg,#404a25 0%,#28301a 100%);
+  padding:clamp(54px,7vw,90px) 0 clamp(64px,8vw,104px);
+}
+.cbd-hero__leaf{position:absolute;width:560px;height:560px;color:rgba(231,205,147,.06);left:-150px;bottom:-180px;transform:rotate(-18deg)}
+.cbd-hero__inner{display:grid;grid-template-columns:1.08fr .92fr;gap:56px;align-items:center;position:relative;z-index:2}
+.cbd-tag{
+  display:inline-flex;align-items:center;gap:.6em;font-family:'Cinzel',serif;font-size:.74rem;
+  letter-spacing:.24em;text-transform:uppercase;color:#1c2410;font-weight:600;
+  background:linear-gradient(120deg,var(--gold-light),var(--gold));padding:.55em 1.2em;border-radius:100px;
+}
+.cbd-hero__title{
+  font-family:'Cormorant Garamond',serif;font-weight:600;font-size:clamp(2.8rem,6.4vw,5rem);
+  line-height:1;letter-spacing:.5px;color:#fff;margin:1.1rem 0 1.2rem;
+}
+.cbd-hero__title em{font-style:italic;color:var(--gold-light)}
+.cbd-hero__lead{font-size:1.12rem;color:#d6dabf;max-width:54ch;margin-bottom:2rem}
+.cbd-hero__cta{display:flex;flex-wrap:wrap;gap:14px;margin-bottom:2.4rem}
+.cbd-hero__cta .btn--ghost{color:#fff;border-color:rgba(255,255,255,.35)}
+.cbd-hero__cta .btn--ghost:hover{border-color:var(--gold-light);color:var(--gold-light)}
+.cbd-hero__trust{display:flex;flex-direction:column;gap:12px;border-top:1px solid rgba(231,205,147,.22);padding-top:22px}
+.cbd-hero__trust span{display:inline-flex;align-items:center;gap:10px;font-size:.92rem;color:#e3e7cc}
+.cbd-hero__trust svg{width:20px;height:20px;color:var(--gold-light);flex:none}
+
+.cbd-hero__media{position:relative;justify-self:center}
+.cbd-hero__media img{width:min(440px,90%);border-radius:var(--radius-lg);box-shadow:var(--shadow-lg);border:1px solid rgba(231,205,147,.4);position:relative;z-index:2}
+.cbd-hero__media .ring{position:absolute;border-radius:50%;border:1.5px solid rgba(231,205,147,.4);z-index:1}
+.cbd-hero__media .ring--1{width:120px;height:120px;right:-26px;top:-30px}
+.cbd-hero__media .ring--2{width:200px;height:200px;left:-40px;bottom:-46px;border-style:dashed;border-color:rgba(231,205,147,.25)}
+
+/* ============================================================
+   SPLIT (o que é / por que)
+   ============================================================ */
+.split{display:grid;grid-template-columns:1fr 1.1fr;gap:clamp(40px,6vw,72px);align-items:center}
+.split__content p{color:#5f5b49;margin-bottom:1.1rem}
+.o-que-e .split__content p,.porque .split__content p{color:#5d5a4a}
+.split__media{display:flex;justify-content:center}
+
+.molecule-card{
+  width:100%;max-width:380px;aspect-ratio:1/1;border-radius:var(--radius-lg);
+  background:radial-gradient(circle at 30% 25%,var(--olive-soft),var(--olive-bg));
+  display:flex;flex-direction:column;align-items:center;justify-content:center;gap:20px;
+  box-shadow:var(--shadow);border:1px solid rgba(94,103,56,.18);position:relative;overflow:hidden;
+}
+.molecule-card::before{content:"";position:absolute;inset:18px;border:1px dashed rgba(94,103,56,.3);border-radius:calc(var(--radius-lg) - 8px)}
+.molecule{width:55%;color:var(--olive-2)}
+.molecule-card__label{font-family:'Cinzel',serif;font-size:.82rem;letter-spacing:.14em;color:var(--olive-deep)}
+.molecule-card__label sub{font-size:.7em}
+
+.pill-row{display:flex;flex-wrap:wrap;gap:10px;margin-top:8px}
+.pill{font-size:.82rem;padding:.5em 1.1em;border-radius:100px;background:var(--olive-bg);color:var(--olive-deep);border:1px solid rgba(94,103,56,.2);font-weight:500}
+
+/* ============================================================
+   COMO FUNCIONA
+   ============================================================ */
+.how__grid{display:grid;grid-template-columns:repeat(3,1fr);gap:26px;position:relative;z-index:2}
+.how{background:rgba(255,255,255,.05);border:1px solid rgba(231,205,147,.18);border-radius:var(--radius);padding:34px 28px;backdrop-filter:blur(4px)}
+.how__num{font-family:'Cormorant Garamond',serif;font-size:2.6rem;font-weight:700;color:var(--gold-light);line-height:1;display:block;margin-bottom:10px}
+.how h3{font-family:'Cormorant Garamond',serif;font-size:1.5rem;font-weight:600;color:#fff;margin-bottom:8px}
+.how p{font-size:.94rem;color:#cdd2b4}
+
+/* ============================================================
+   BENEFÍCIOS
+   ============================================================ */
+.benefit__grid{display:grid;grid-template-columns:repeat(4,1fr);gap:22px}
+.benefit{
+  background:var(--white);border:1px solid var(--line);border-radius:var(--radius);padding:30px 24px;
+  transition:transform .35s var(--ease),box-shadow .35s,border-color .35s;position:relative;overflow:hidden;
+}
+.benefit::after{content:"";position:absolute;left:0;top:0;height:3px;width:0;background:linear-gradient(90deg,var(--olive),var(--gold));transition:width .4s var(--ease)}
+.benefit:hover{transform:translateY(-6px);box-shadow:var(--shadow);border-color:transparent}
+.benefit:hover::after{width:100%}
+.benefit__icon{width:56px;height:56px;border-radius:16px;background:var(--olive-bg);display:grid;place-items:center;margin-bottom:18px;transition:transform .35s}
+.benefit__icon svg{width:28px;height:28px;color:var(--olive-2)}
+.benefit:hover .benefit__icon{transform:scale(1.08) rotate(-4deg)}
+.benefit h3{font-family:'Cormorant Garamond',serif;font-size:1.32rem;font-weight:600;color:var(--mauve-deep);margin-bottom:6px;line-height:1.15}
+.benefit p{font-size:.88rem;color:#6c5b54;line-height:1.5}
+.note{text-align:center;color:var(--muted);font-size:.86rem;margin-top:34px;font-style:italic}
+
+/* ============================================================
+   CONDIÇÕES
+   ============================================================ */
+.condition__grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.condition{
+  display:flex;align-items:center;gap:14px;background:var(--white);border:1px solid var(--line);
+  border-radius:14px;padding:18px 22px;font-size:1rem;font-weight:500;color:var(--mauve-deep);
+  transition:transform .3s var(--ease),box-shadow .3s,border-color .3s;
+}
+.condition svg{width:26px;height:26px;color:var(--olive-2);flex:none}
+.condition:hover{transform:translateX(5px);box-shadow:var(--shadow-sm);border-color:rgba(124,133,78,.4)}
+
+/* ============================================================
+   POR QUE NA CLINIC
+   ============================================================ */
+.why-list{display:flex;flex-direction:column;gap:14px;margin-top:24px}
+.why-list li{display:flex;align-items:center;gap:13px;font-size:1.02rem;color:var(--ink)}
+.why-list svg{width:24px;height:24px;color:#fff;background:var(--olive-2);border-radius:50%;padding:5px;flex:none}
+.specialist-card{
+  background:var(--white);border-radius:var(--radius-lg);overflow:hidden;box-shadow:var(--shadow);
+  border:1px solid var(--line);
+}
+.specialist-card img{width:100%;aspect-ratio:1/1;object-fit:cover;object-position:center top}
+.specialist-card__body{padding:28px 28px 30px}
+.specialist-card__role{font-family:'Cinzel',serif;font-size:.68rem;letter-spacing:.2em;text-transform:uppercase;color:var(--olive-2);font-weight:600}
+.specialist-card__body h3{font-family:'Cormorant Garamond',serif;font-size:1.7rem;font-weight:600;color:var(--mauve-deep);margin:4px 0 10px}
+.specialist-card__body p{font-size:.92rem;color:#6c5b54;margin-bottom:20px}
+
+/* ============================================================
+   COMO COMEÇAR — steps
+   ============================================================ */
+.steps{display:grid;grid-template-columns:1fr auto 1fr auto 1fr;align-items:flex-start;gap:0;position:relative;z-index:2}
+.step{text-align:center;padding:0 18px}
+.step__num{
+  width:64px;height:64px;border-radius:50%;display:grid;place-items:center;margin:0 auto 18px;
+  font-family:'Cormorant Garamond',serif;font-size:1.8rem;font-weight:700;color:#2a3014;
+  background:linear-gradient(120deg,var(--gold-light),var(--gold));box-shadow:0 10px 24px rgba(0,0,0,.2);
+}
+.step h3{font-family:'Cormorant Garamond',serif;font-size:1.5rem;font-weight:600;color:#fff;margin-bottom:8px}
+.step p{font-size:.94rem;color:#cdd2b4;max-width:30ch;margin:0 auto}
+.step__line{height:2px;background:linear-gradient(90deg,var(--gold),transparent);margin-top:32px;min-width:30px;align-self:flex-start}
+
+/* ============================================================
+   FAQ
+   ============================================================ */
+.faq{display:flex;flex-direction:column;gap:14px}
+.faq__item{background:var(--white);border:1px solid var(--line);border-radius:16px;overflow:hidden;transition:box-shadow .3s,border-color .3s}
+.faq__item.open{box-shadow:var(--shadow-sm);border-color:rgba(124,133,78,.4)}
+.faq__q{
+  width:100%;display:flex;align-items:center;justify-content:space-between;gap:16px;text-align:left;
+  padding:22px 26px;font-family:'Jost',sans-serif;font-size:1.06rem;font-weight:500;color:var(--mauve-deep);
+}
+.faq__ico{position:relative;width:20px;height:20px;flex:none}
+.faq__ico::before,.faq__ico::after{content:"";position:absolute;background:var(--olive-2);border-radius:2px;transition:transform .3s var(--ease)}
+.faq__ico::before{top:9px;left:0;width:20px;height:2px}
+.faq__ico::after{top:0;left:9px;width:2px;height:20px}
+.faq__item.open .faq__ico::after{transform:rotate(90deg);opacity:0}
+.faq__a{max-height:0;overflow:hidden;transition:max-height .4s var(--ease),padding .4s var(--ease);padding:0 26px}
+.faq__item.open .faq__a{max-height:260px;padding:0 26px 24px}
+.faq__a p{color:#6c5b54;font-size:.96rem;line-height:1.6}
+
+/* ============================================================
+   CTA + DISCLAIMER
+   ============================================================ */
+.cbd-cta{
+  text-align:center;color:#eef0df;position:relative;overflow:hidden;
+  background:
+   radial-gradient(70% 120% at 80% 0%,rgba(231,205,147,.18) 0%,transparent 55%),
+   linear-gradient(135deg,var(--olive-2) 0%,var(--olive-deep) 100%);
+}
+.cbd-cta__leaf{position:absolute;width:360px;height:360px;color:rgba(231,205,147,.08);right:-60px;top:50%;transform:translateY(-50%) rotate(14deg)}
+.cbd-cta h2{font-family:'Cormorant Garamond',serif;font-size:clamp(2rem,4.5vw,3.1rem);font-weight:600;color:#fff;margin-bottom:14px;position:relative;z-index:2}
+.cbd-cta p{color:#d7dcc2;max-width:56ch;margin:0 auto 28px;font-size:1.06rem;position:relative;z-index:2}
+.cbd-cta .btn-row{display:flex;justify-content:center;flex-wrap:wrap;gap:14px;position:relative;z-index:2}
+
+.disclaimer-wrap{background:var(--cream-2);padding:40px 0}
+.disclaimer{
+  display:flex;gap:18px;align-items:flex-start;max-width:900px;margin:0 auto;
+  background:#fff;border:1px solid var(--line);border-left:4px solid var(--olive);border-radius:14px;padding:24px 28px;
+}
+.disclaimer svg{width:30px;height:30px;color:var(--olive-2);flex:none;margin-top:2px}
+.disclaimer p{font-size:.9rem;color:#6c5b54;line-height:1.6}
+.disclaimer strong{color:var(--mauve-deep)}
+
+/* ============================================================
+   RESPONSIVE
+   ============================================================ */
+@media (max-width:1024px){
+  .cbd-hero__inner{grid-template-columns:1fr;gap:46px}
+  .cbd-hero__media{order:-1}
+  .split{grid-template-columns:1fr;gap:44px}
+  .o-que-e .split__media{order:-1}
+  .benefit__grid{grid-template-columns:repeat(2,1fr)}
+  .condition__grid{grid-template-columns:repeat(2,1fr)}
+  .how__grid{grid-template-columns:1fr;gap:18px}
+  .steps{grid-template-columns:1fr;gap:34px}
+  .step__line{display:none}
+}
+@media (max-width:600px){
+  .benefit__grid{grid-template-columns:1fr}
+  .condition__grid{grid-template-columns:1fr}
+  .cbd-hero__title{font-size:clamp(2.6rem,11vw,3.4rem)}
+}

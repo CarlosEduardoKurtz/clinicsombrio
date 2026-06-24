@@ -1,0 +1,11 @@
+# Sistema / editor
+.DS_Store
+Thumbs.db
+desktop.ini
+*.log
+
+# Vercel
+.vercel
+
+# Dependências (caso use ferramentas no futuro)
+node_modules/
