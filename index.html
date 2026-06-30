@@ -8,6 +8,20 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
 })(window,document,'script','dataLayer','GTM-MMP8KHBN');</script>
 <!-- End Google Tag Manager -->
+<!-- Google Ads (gtag.js) — conversão no clique do WhatsApp -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-18263034538"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'AW-18263034538');
+  document.addEventListener('click', function(e){
+    var a = e.target.closest ? e.target.closest('a[href*="wa.me"], a[href*="api.whatsapp"]') : null;
+    if (a && typeof gtag === 'function') {
+      gtag('event', 'conversion', {'send_to': 'AW-18263034538/WMYICIeux8gcEKqVv4RE'});
+    }
+  }, true);
+</script>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Clinic — Estética &amp; Saúde | Odontologia e Harmonização Facial em Sombrio/SC</title>
